@@ -1,0 +1,77 @@
+@import '_normalize'
+
+font-base = 'Fira Sans', Helvetica, Arial, sans-serif
+font-condensed = 'Oswald'
+
+size-font = 1.5rem
+size-line = 2rem
+
+size-s = 768px
+size-m = 1060px
+size-l = 1200px
+
+color-main = rgb(0, 0, 0)
+color-black = rgb(0, 0, 0)
+color-white = rgb(255, 255, 255)
+color-light = #f7f7f7
+color-pink = #ed2a7a
+
+/*
+  Category colors
+*/
+color-technology = #42467C
+color-government = #330047
+color-transportation = #002E4A
+color-financial = #426F73
+color-healthcare = #0A2239
+color-watch = #5C707C
+color-listen = #1E5F4C
+color-attend = #054A29
+color-community = #132E32
+
+trs-function = cubic-bezier(.33,.66,.66,1)
+
+mediaMin(minWidth)
+  @media screen and (min-width: minWidth)
+    {block}
+mediaBetween(minWidth, maxWidth)
+  @media screen and (min-width: minWidth) and (max-width: maxWidth)
+    {block}
+
+*
+  &
+  &:before
+  &:after
+    box-sizing border-box
+  &:active
+    -webkit-tap-highlight-color: alpha(color-white, 0)
+
+::selection
+  background alpha(color-black, 0.05)
+
+input
+textarea
+  &:focus
+    outline 0
+
+html
+  font-size 62.5%
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  background-color: color-light
+
+  +mediaMin(size-s)
+    background-color color-white
+
+body
+  position relative
+  font 400 size-font/size-line font-base
+  color color-main
+
+a
+a:link
+a:active
+a:visited
+  text-decoration none
+  cursor pointer
