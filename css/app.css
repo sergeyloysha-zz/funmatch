@@ -1316,8 +1316,13 @@ strong {
   position: relative;
   width: 50%;
   padding: 0 4rem;
-  float: left;
   z-index: 1;
+}
+.section__left {
+  float: left;
+}
+.section__right {
+  float: right;
 }
 .section__subtitle {
   font-weight: 300;
@@ -1634,9 +1639,6 @@ strong {
 .features__item {
   width: 40%;
 }
-.features-block {
-  text-align: left;
-}
 .features-block__icon {
   display: block;
   background-repeat: no-repeat;
@@ -1664,7 +1666,7 @@ strong {
   color: #333842;
 }
 .features-block__list {
-  margin: 0 3rem;
+  margin: 0 5rem;
 }
 .features-block__feature {
   padding: 0 0 0 5rem;
